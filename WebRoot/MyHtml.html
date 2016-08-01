@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyHtml.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<script>
+	function display() {
+		//document.getElementById("demo").innerHTML = Date();
+		document.getElementById("demo").innerHTML = document
+				.getElementById("name").value
+				+ document.getElementById("password").value;
+
+	}
+</script>
+<style>
+#demo {
+	text-indent: 50px;
+}
+
+tr td {
+	text-align: center;
+}
+
+#button1 {
+	margin: 20px;
+	padding: 0px 20px;
+}
+</style>
+</head>
+
+<body>
+
+	<p id="demo">这是一个段落</p>
+
+
+	<table>
+		<tr>
+			<td>Name:</td>
+			<td><input id=name type="text" name="name" value=""></td>
+		</tr>
+
+		<tr>
+			<td>PassWord:</td>
+			<td><input id=password type="password" name="pwd"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+
+	</table>
+	<button id="button1" type="button" onclick="display()">login</button>
+	<br>
+	<a href="http://www.baidu.com" target="_blank">百度一下，你就知道！</a>
+</body>
+</html>
